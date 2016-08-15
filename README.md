@@ -19,6 +19,7 @@ docker run \
     --name cg_poz_01 \
     -p 0.0.0.0:25565:25565 \
     -d \
+	-t \
     -e DEFAULT_OP=xBendingUnit22x \
     -e MINECRAFT_EULA=true \
     cg_poz2
