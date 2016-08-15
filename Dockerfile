@@ -9,7 +9,7 @@ RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
     mkdir -p /opt/minecraft/$(dirname libraries/${LAUNCHWRAPPER}) && \
     curl -S https://libraries.minecraft.net/$LAUNCHWRAPPER -o /opt/minecraft/libraries/$LAUNCHWRAPPER && \
     find /opt/minecraft -name "*.log" -exec rm -f {} \; && \
-    rm -rf /opt/minecraft/world /tmp/*
+    rm -rf /opt/minecraft/world /tmp/* && \
 	mkdir -p /opt/minecraft/java_pref
 
 ENV MINECRAFT_VERSION 1.7.10
