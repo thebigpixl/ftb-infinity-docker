@@ -13,3 +13,12 @@ or [How to Write a Git Commit Message][] by Chris Beams.
 [How to Write a Git Commit Message]: http://chris.beams.io/posts/git-commit/
 
 [dlord/minecraft]: https://hub.docker.com/r/dlord/minecraft/
+
+
+docker run \
+    --name cg_poz_01 \
+    -p 0.0.0.0:25565:25565 \
+    -d \
+    -e DEFAULT_OP=xBendingUnit22x \
+    -e MINECRAFT_EULA=true \
+    cg_poz2
