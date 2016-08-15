@@ -10,7 +10,8 @@ RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
     curl -S https://libraries.minecraft.net/$LAUNCHWRAPPER -o /opt/minecraft/libraries/$LAUNCHWRAPPER && \
     find /opt/minecraft -name "*.log" -exec rm -f {} \; && \
     rm -rf /opt/minecraft/world /tmp/* && \
-	mkdir -p /opt/minecraft/java_pref
+	mkdir -p /opt/minecraft/java_pref && echo "xBendingUnit22x" >>/opt/minecraft/ops.txt && \
+	echo "xBendingUnit22x" >> /opt/minecraft/whitelist.txt
 
 ENV MINECRAFT_VERSION 1.7.10
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -Djava.util.prefs.userRoot=/opt/minecraft/java_pref/
